@@ -307,12 +307,11 @@ class RNParallax extends Component {
         style={[
           styles.bar,
           {
-            height: this.getHeaderMinHeight(),
-            opacity: navBarOpacity,
+            height: this.getHeaderMinHeight()
           },
         ]}
       >
-        {renderNavBar()}
+        {renderNavBar(navBarOpacity)}
       </Animated.View>
     );
   }
